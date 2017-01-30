@@ -10,7 +10,8 @@ namespace Pattern_Examples
     {
         static void Main(string[] args)
         {
-            Console.Write("changes");
+            //abstract factory example
+           
         }
     }
 }
