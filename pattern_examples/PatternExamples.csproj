@@ -43,9 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory\ChocoCandy.cs" />
-    <Compile Include="AbstractFactory\ICandy.cs" />
-    <Compile Include="AbstractFactory\VanillaCandy.cs" />
+    <Compile Include="AbstractFactory\CandyFactory.cs" />
+    <Compile Include="AbstractFactory\CookieFactory.cs" />
+    <Compile Include="AbstractFactory\Products\Candy\ChocoCandy.cs" />
+    <Compile Include="AbstractFactory\Products\Cookie\ChocoCookie.cs" />
+    <Compile Include="AbstractFactory\Products\Cookie\CocoCookie.cs" />
+    <Compile Include="AbstractFactory\Products\Candy\ICandy.cs" />
+    <Compile Include="AbstractFactory\IFactory.cs" />
+    <Compile Include="AbstractFactory\Products\Cookie\ICookie.cs" />
+    <Compile Include="AbstractFactory\Products\Candy\VanillaCandy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

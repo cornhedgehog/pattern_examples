@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pattern_examples.AbstractFactory
+namespace PatternExamples.AbstractFactory.Products
 {
-    class ICandy
+    class CocoCookie: ICookie
     {
     }
 }

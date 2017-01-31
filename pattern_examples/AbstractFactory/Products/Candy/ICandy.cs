@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pattern_examples.AbstractFactory
+namespace PatternExamples.AbstractFactory
 {
-    class VanillaCandy
+    abstract class ICandy
     {
+        abstract public void Create();
     }
 }
