@@ -8,13 +8,16 @@ namespace PatternExamples.AbstractFactory
 {
     class VanillaCandy: ICandy
     {
-        public override void Create()
+        private const double caloriesPer100g = 480;
+
+        public VanillaCandy()
         {
+            Console.WriteLine("Vanilla Candy was made");
         }
 
-        public String GetNutritionFacts()
-        {            
-            return String.Empty;
+        public override void GetNutritionFacts(double grams)
+        {
+            Console.WriteLine("This amount of cookies is {0:N} cal", ((caloriesPer100g * grams) / 100));
         }
     }
 }

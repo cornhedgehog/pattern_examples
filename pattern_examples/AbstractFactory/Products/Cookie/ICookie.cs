@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pattern_examples.AbstractFactory.Products;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PatternExamples.AbstractFactory.Products
 {
-    class ICookie
-    {
+    abstract class ICookie: IProduct
+    {        
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pattern_examples.AbstractFactory.Products;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,22 +8,15 @@ using System.Threading.Tasks;
 namespace PatternExamples.AbstractFactory
 {
     class CandyFactory: IFactory
-    {
-        public override void GatherIngredients()
-        {
-            throw new NotImplementedException();
+    {      
+        public override IProduct CreateProductA()
+        {            
+            return new ChocoCandy();
         }
 
-        public override void Make()
-        {
-           boil();
+        public override IProduct CreateProductB()
+        {            
+            return new VanillaCandy();
         }
-
-        public override void Pack()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void boil() { }
     }
 }

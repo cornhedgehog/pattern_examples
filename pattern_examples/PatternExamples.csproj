@@ -52,6 +52,7 @@
     <Compile Include="AbstractFactory\IFactory.cs" />
     <Compile Include="AbstractFactory\Products\Cookie\ICookie.cs" />
     <Compile Include="AbstractFactory\Products\Candy\VanillaCandy.cs" />
+    <Compile Include="AbstractFactory\Products\IProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
